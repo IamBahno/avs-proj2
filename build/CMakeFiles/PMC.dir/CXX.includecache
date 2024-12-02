@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../common/base_mesh_builder.h
+array
+-
+vector_helpers.h
+../common/vector_helpers.h
+parametric_scalar_field.h
+../common/parametric_scalar_field.h
+
+../common/parametric_scalar_field.h
+string
+-
+vector
+-
+vector_helpers.h
+../common/vector_helpers.h
+
+../common/vector_helpers.h
+chrono
+-
+
+/home/bahno/Desktop/skola/sem7/avs/proj2/parallel_builder/loop_mesh_builder.cpp
+iostream
+-
+math.h
+-
+limits
+-
+loop_mesh_builder.h
+/home/bahno/Desktop/skola/sem7/avs/proj2/parallel_builder/loop_mesh_builder.h
+
+/home/bahno/Desktop/skola/sem7/avs/proj2/parallel_builder/loop_mesh_builder.h
+vector
+-
+base_mesh_builder.h
+/home/bahno/Desktop/skola/sem7/avs/proj2/parallel_builder/base_mesh_builder.h
+
