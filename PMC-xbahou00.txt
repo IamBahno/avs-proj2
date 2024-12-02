@@ -13,16 +13,14 @@ Login: xbahou00
 2) Jak jste ve funkci LoopMeshBuilder::marchCubes zajistili správný výsledek 
   (počet trojúhelníků) vrácený touto funkcí? Popište jaké řešení jste zvolili a proč.  
   
-   //TODO vybrat jeden řádek podle toho co nechám v kódu
    -Každé vlákno si počítá vlastní počet trojúhelníků a ty jsou na konci redukány do jedné proměné pomocí +. Takhle si vlákna nepřepisují hodnoty a sloučení se vykoná jenom jednou.
-   -V každé iteraci vlákno zjistí počet trojúhelníků a přičte je do globální proměné pro všechny vlákna. Nad operaci jsem přidal pragmu critical, která značí kritickou sekci a compiler umožní jenom jednomu vláknu přístup do ní v jeden moment. Variantu s kritickou sekcí jsem zvolil, protože byla rychlejší než redukce.  
 
 
 3) Jaké plánování (rozdělení práce mezi vlákna) jste zvolili a proč? Popište, na
    jakých datech (počet vláken, velikost problému) jste k závěrům došli.  
 
-   -Testoval jsem na plánování typu dynamic, guided a static. A nejrychlejší výsledky jsem dostával za použití Dynamic s velikostí chunku 8, proto jsem je zvolil.
-   //TODO až otestuju na barboře doplnit data a počet vlaken atd.
+   -Testoval jsem na plánování typu dynamic, guided a static. Nejpomalejší výsledky byli u guided. Static a dynamic měli stejné výsledky, nakonec jsem vybral static. Protože všechny iterace vykonávají zhruba stejně práce, tak to dává smysml.
+   -Testoval jsem nad daty /bun_zipper_res2.pts, které nejsou nějak zásadně rozsáhlé. Nejlepší výsledky jsem měl s počtem vláken 24.
 
 Úloha 2: Paralelní průchod stromem
 ===============================================================================

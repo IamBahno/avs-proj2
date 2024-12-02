@@ -28,11 +28,8 @@ unsigned LoopMeshBuilder::marchCubes(const ParametricScalarField &field)
     unsigned totalTriangles = 0;
     unsigned tmp = 0;
     // 2. Loop over each coordinate in the 3D grid.
-    //TODO otestovat nejlepsi na barbore (zjisits jestli pouzit critical nebo reduction nebo oboji)
-    // #pragma omp parallel for reduction(+ : totalTriangles) schedule(static)
-    #pragma omp parallel for reduction(+ : totalTriangles) schedule(dynamic, 8)
-    // #pragma omp parallel for reduction(+ : totalTriangles) schedule(dynamic, 8) private(tmp)
-    // #pragma omp parallel for schedule(dynamic, 8) private(tmp)
+
+    #pragma omp parallel for reduction(+ : totalTriangles) schedule(static)
 
     for(size_t i = 0; i < totalCubesCount; ++i)
     {
@@ -44,11 +41,7 @@ unsigned LoopMeshBuilder::marchCubes(const ParametricScalarField &field)
         // 4. Evaluate "Marching Cube" at given position in the grid and
         //    store the number of triangles generated.
 
-        //TODO otestovat na barbore, jestli nechat tmp a pragmu nebo jenom totalTriangles
         totalTriangles += buildCube(cubeOffset, field);
-        // tmp = buildCube(cubeOffset, field);
-        // #pragma omp critical 
-        // totalTriangles += tmp;
     }
 
     // 5. Return total number of triangles generated.

@@ -1,11 +1,11 @@
 /**
  * @file    tree_mesh_builder.cpp
  *
- * @author  FULL NAME <xlogin00@stud.fit.vutbr.cz>
+ * @author  Ondřej Bahounek <xbahou00@stud.fit.vutbr.cz>
  *
  * @brief   Parallel Marching Cubes implementation using OpenMP tasks + octree early elimination
  *
- * @date    DATE
+ * @date    2.12.2024
  **/
 
 #include <iostream>
@@ -37,5 +37,6 @@ float TreeMeshBuilder::evaluateFieldAt(const Vec3_t<float> &pos, const Parametri
 
 void TreeMeshBuilder::emitTriangle(const BaseMeshBuilder::Triangle_t &triangle)
 {
-    
+    #pragma omp critical
+    mTriangles.push_back(triangle);   
 }
