@@ -1,16 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PMC.dir/common/base_mesh_builder.cpp.o"
-  "CMakeFiles/PMC.dir/common/base_mesh_builder.cpp.o.d"
   "CMakeFiles/PMC.dir/common/parametric_scalar_field.cpp.o"
-  "CMakeFiles/PMC.dir/common/parametric_scalar_field.cpp.o.d"
   "CMakeFiles/PMC.dir/common/ref_mesh_builder.cpp.o"
-  "CMakeFiles/PMC.dir/common/ref_mesh_builder.cpp.o.d"
   "CMakeFiles/PMC.dir/main.cpp.o"
-  "CMakeFiles/PMC.dir/main.cpp.o.d"
   "CMakeFiles/PMC.dir/parallel_builder/loop_mesh_builder.cpp.o"
-  "CMakeFiles/PMC.dir/parallel_builder/loop_mesh_builder.cpp.o.d"
   "CMakeFiles/PMC.dir/parallel_builder/tree_mesh_builder.cpp.o"
-  "CMakeFiles/PMC.dir/parallel_builder/tree_mesh_builder.cpp.o.d"
   "PMC"
   "PMC.pdb"
 )
