@@ -26,12 +26,18 @@ Login: xbahou00
 ===============================================================================
 1) Stručně popište použití OpenMP tasků ve vašem řešení. 
 
+   - Nový task se vytvoří pří každém volání rekurzivní funkce "processCube". Tasky ukládájí počty troju§helníku do sdílené proměné pomocí "#pragma omp critical". Na konci funkce je "#pragma omp taskwait", aby task počkal až skončí všechny jeho podtasky.
+
 2) Jakou hodnotu cut-off jste zvolili? Jaké hodnoty "cut-off" jste zkoušeli, 
    na jak velkých velikostech problému a jakých času jste dosáhli? 
    Odůvodněte vaši volbu.
 
+   -Cut-off jsem nastavil na hodnotu 1. Zkoušel jsem i hodnoty jako 2 a 4, ale na vstupu bun_zipper_res3.pts. Měli o desítky až nižší stovky ms pomalejší běhy. Předpokládám, ale že od nějaké velikosti dat bude výhodné začít využívat sekvenční zpracování, kvůli reřii.
+
 3) Jakým způsobem zajišťujete ukládání trojúhelníků z několika vláken současně 
    v metodě LoopMeshBuilder::emitTriangle?
+   - Pomocí #pragma omp critical, která udělá to, že ukládání v kritické sekci. Takže najednou může ukládat pouze jeden.
+
 
 
 Úloha 3: Grafy škálování všech řešení
@@ -39,13 +45,21 @@ Login: xbahou00
 
 1) Stručně zhodnoťte efektivitu vytvořených řešení 
    (na základě VŠECH odevzdaných grafů ŠKÁLOVÁNÍ).
+   
+   - Na grafech je jednoznečně viděť, nárust efektivity s velikostí vstupních dat od nějakých 160 už zdvojnásobení velikosti dat nemá skoro žádný vliv na čas.
+   - Octree je ve všech případech rychlejší než loop.
 
 2) V jakém případě (v závislosti na počtu bodů ve vstupním souboru a velikosti 
    mřížky) bude vaše řešení 1. úlohy neefektivní? 
    (pokud takový případ existuje a je vidět ve vašem grafu)
 
+   - V případě, když spustím velký počet vláken na malém vstupu.
+
 3) Je (nebo není) stromový algoritmus efektivnější z pohledu slabého škálování 
    vzhledem ke vstupu?
+
+   - Z hlediska slabého škálování není efektivnější, především na malých vstupech.
+
 
 4) Do souboru 3_4.txt napište svůj login, který používáte na Barboře, na druhý
    řádek napište počet úloh (jobs), které jste spustili za dobu řešení projektu 2
@@ -61,17 +75,17 @@ Login: xbahou00
    18 vláken? Hodnoty zapište do souboru 4_1.txt
    (využijte předpřipravené kostry v souboru - čísla přepište).
    
-   ref:
-   loop:
-   tree:
+   ref: 0.995
+   loop: 16.542
+   tree: 9.405
 
 2) Jaké bylo průměrné využití jader pro všechny tři implementace s využitím 
    všech jader? Hodnoty zapište do souboru 4_2.txt (využijte předpřipravené 
    kostry v souboru - čísla přepište).
    
-   ref:
-   loop:
-   tree:   
+   ref: 0.996
+   loop: 27.254
+   tree: 3.397  
 
 3) Vypočítejte efektivitu vašeho řešení loop a tree vůči ref pro 18 a 36 vláken. 
    Hodnoty naměřte ručně na výpočetním uzlu, ne přes VTune. Použijte následující parametry:
@@ -80,7 +94,7 @@ Login: xbahou00
    
    Hodnoty zapište do souboru 4_3.txt 
    (využijte předpřipravené kostry v souboru - čísla přepište):
-   "loop (18)" vs. "ref"
-   "tree (18)" vs. "ref"
-   "loop (36)" vs. "ref"
-   "tree (36)" vs. "ref"
+   "loop (18)" vs. "ref" 0.917 %
+   "tree (18)" vs. "ref" 0.969 %
+   "loop (36)" vs. "ref" 0.732 %
+   "tree (36)" vs. "ref" 0.294 %
