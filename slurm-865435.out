@@ -1,561 +1,0 @@
--- The CXX compiler identification is IntelLLVM 2024.2.0
--- The C compiler identification is IntelLLVM 2024.2.0
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icx - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Found OpenMP_C: -fiopenmp  
--- Found OpenMP_CXX: -fiopenmp  
--- Found OpenMP: TRUE   
--- Configuring done (1.8s)
--- Generating done (0.0s)
--- Build files have been written to: /home/xbahou00/avs/proj2/avs-proj2/build_vtune
-/apps/all/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -S/home/xbahou00/avs/proj2/avs-proj2 -B/home/xbahou00/avs/proj2/avs-proj2/build_vtune --check-build-system CMakeFiles/Makefile.cmake 0
-/apps/all/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_progress_start /home/xbahou00/avs/proj2/avs-proj2/build_vtune/CMakeFiles /home/xbahou00/avs/proj2/avs-proj2/build_vtune//CMakeFiles/progress.marks
-make  -f CMakeFiles/Makefile2 all
-make[1]: Entering directory '/home/xbahou00/avs/proj2/avs-proj2/build_vtune'
-make  -f CMakeFiles/PMC.dir/build.make CMakeFiles/PMC.dir/depend
-make[2]: Entering directory '/home/xbahou00/avs/proj2/avs-proj2/build_vtune'
-cd /home/xbahou00/avs/proj2/avs-proj2/build_vtune && /apps/all/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_depends "Unix Makefiles" /home/xbahou00/avs/proj2/avs-proj2 /home/xbahou00/avs/proj2/avs-proj2 /home/xbahou00/avs/proj2/avs-proj2/build_vtune /home/xbahou00/avs/proj2/avs-proj2/build_vtune /home/xbahou00/avs/proj2/avs-proj2/build_vtune/CMakeFiles/PMC.dir/DependInfo.cmake "--color="
-make[2]: Leaving directory '/home/xbahou00/avs/proj2/avs-proj2/build_vtune'
-make  -f CMakeFiles/PMC.dir/build.make CMakeFiles/PMC.dir/build
-make[2]: Entering directory '/home/xbahou00/avs/proj2/avs-proj2/build_vtune'
-[ 14%] Building CXX object CMakeFiles/PMC.dir/common/base_mesh_builder.cpp.o
-/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx  -I/home/xbahou00/avs/proj2/avs-proj2/common -I/home/xbahou00/avs/proj2/avs-proj2/parallel_builder -O3 -xHost -g -qopenmp-simd -qopt-report=3 -fiopenmp -std=gnu++11 -fiopenmp -MD -MT CMakeFiles/PMC.dir/common/base_mesh_builder.cpp.o -MF CMakeFiles/PMC.dir/common/base_mesh_builder.cpp.o.d -o CMakeFiles/PMC.dir/common/base_mesh_builder.cpp.o -c /home/xbahou00/avs/proj2/avs-proj2/common/base_mesh_builder.cpp
-[ 28%] Building CXX object CMakeFiles/PMC.dir/common/parametric_scalar_field.cpp.o
-/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx  -I/home/xbahou00/avs/proj2/avs-proj2/common -I/home/xbahou00/avs/proj2/avs-proj2/parallel_builder -O3 -xHost -g -qopenmp-simd -qopt-report=3 -fiopenmp -std=gnu++11 -fiopenmp -MD -MT CMakeFiles/PMC.dir/common/parametric_scalar_field.cpp.o -MF CMakeFiles/PMC.dir/common/parametric_scalar_field.cpp.o.d -o CMakeFiles/PMC.dir/common/parametric_scalar_field.cpp.o -c /home/xbahou00/avs/proj2/avs-proj2/common/parametric_scalar_field.cpp
-[ 42%] Building CXX object CMakeFiles/PMC.dir/common/ref_mesh_builder.cpp.o
-/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx  -I/home/xbahou00/avs/proj2/avs-proj2/common -I/home/xbahou00/avs/proj2/avs-proj2/parallel_builder -O3 -xHost -g -qopenmp-simd -qopt-report=3 -fiopenmp -std=gnu++11 -fiopenmp -MD -MT CMakeFiles/PMC.dir/common/ref_mesh_builder.cpp.o -MF CMakeFiles/PMC.dir/common/ref_mesh_builder.cpp.o.d -o CMakeFiles/PMC.dir/common/ref_mesh_builder.cpp.o -c /home/xbahou00/avs/proj2/avs-proj2/common/ref_mesh_builder.cpp
-[ 57%] Building CXX object CMakeFiles/PMC.dir/parallel_builder/loop_mesh_builder.cpp.o
-/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx  -I/home/xbahou00/avs/proj2/avs-proj2/common -I/home/xbahou00/avs/proj2/avs-proj2/parallel_builder -O3 -xHost -g -qopenmp-simd -qopt-report=3 -fiopenmp -std=gnu++11 -fiopenmp -MD -MT CMakeFiles/PMC.dir/parallel_builder/loop_mesh_builder.cpp.o -MF CMakeFiles/PMC.dir/parallel_builder/loop_mesh_builder.cpp.o.d -o CMakeFiles/PMC.dir/parallel_builder/loop_mesh_builder.cpp.o -c /home/xbahou00/avs/proj2/avs-proj2/parallel_builder/loop_mesh_builder.cpp
-[ 71%] Building CXX object CMakeFiles/PMC.dir/parallel_builder/tree_mesh_builder.cpp.o
-/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx  -I/home/xbahou00/avs/proj2/avs-proj2/common -I/home/xbahou00/avs/proj2/avs-proj2/parallel_builder -O3 -xHost -g -qopenmp-simd -qopt-report=3 -fiopenmp -std=gnu++11 -fiopenmp -MD -MT CMakeFiles/PMC.dir/parallel_builder/tree_mesh_builder.cpp.o -MF CMakeFiles/PMC.dir/parallel_builder/tree_mesh_builder.cpp.o.d -o CMakeFiles/PMC.dir/parallel_builder/tree_mesh_builder.cpp.o -c /home/xbahou00/avs/proj2/avs-proj2/parallel_builder/tree_mesh_builder.cpp
-[ 85%] Building CXX object CMakeFiles/PMC.dir/main.cpp.o
-/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx  -I/home/xbahou00/avs/proj2/avs-proj2/common -I/home/xbahou00/avs/proj2/avs-proj2/parallel_builder -O3 -xHost -g -qopenmp-simd -qopt-report=3 -fiopenmp -std=gnu++11 -fiopenmp -MD -MT CMakeFiles/PMC.dir/main.cpp.o -MF CMakeFiles/PMC.dir/main.cpp.o.d -o CMakeFiles/PMC.dir/main.cpp.o -c /home/xbahou00/avs/proj2/avs-proj2/main.cpp
-[100%] Linking CXX executable PMC
-/apps/all/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_link_script CMakeFiles/PMC.dir/link.txt --verbose=1
-/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx -O3 -xHost -g -qopenmp-simd -qopt-report=3 -fiopenmp -fiopenmp CMakeFiles/PMC.dir/common/base_mesh_builder.cpp.o CMakeFiles/PMC.dir/common/parametric_scalar_field.cpp.o CMakeFiles/PMC.dir/common/ref_mesh_builder.cpp.o CMakeFiles/PMC.dir/parallel_builder/loop_mesh_builder.cpp.o CMakeFiles/PMC.dir/parallel_builder/tree_mesh_builder.cpp.o CMakeFiles/PMC.dir/main.cpp.o -o PMC  /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/libiomp5.so /lib64/libpthread.so 
-make[2]: Leaving directory '/home/xbahou00/avs/proj2/avs-proj2/build_vtune'
-[100%] Built target PMC
-make[1]: Leaving directory '/home/xbahou00/avs/proj2/avs-proj2/build_vtune'
-/apps/all/CMake/3.27.6-GCCcore-13.2.0/bin/cmake -E cmake_progress_start /home/xbahou00/avs/proj2/avs-proj2/build_vtune/CMakeFiles 0
-vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r /home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-ref-18 -command stop.
-======================== Marching Cubes Mesh Builder ==========================
-Mesh Builder:        Reference
-Input Field File:    ../data/bun_zipper_res3.pts
-Output Mesh File:    
-Grid Size:           128
-Iso Level:           0.15
-Field Elements:      1889
-============================= Building the Mesh ===============================
-Number of Threads:   18
-Elapsed Time:        9009 ms
-Mesh Triangle Count: 163220
-vtune: Collection stopped.
-vtune: Using result path `/home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-ref-18'
-vtune: Executing actions  0 %                                                  vtune: Executing actions  0 % Finalizing results                               vtune: Executing actions  0 % Finalizing the result                            vtune: Executing actions  0 % Clearing the database                            vtune: Executing actions  7 % Clearing the database                            vtune: Executing actions  7 % Loading raw data to the database                 vtune: Executing actions  7 % Loading 'systemcollector-3387426-cn44.barbora.it4vtune: Executing actions 12 % Loading 'systemcollector-3387426-cn44.barbora.it4vtune: Executing actions 12 % Loading '3387426-3387431.0.trace' file           vtune: Executing actions 12 % Loading 'userapicollector-3387431-291c5301.trace'vtune: Executing actions 12 % Converting API Events to Waits                   vtune: Executing actions 12 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Processing profile metrics and debug information vtune: Executing actions 19 % Processing profile metrics and debug information vtune: Executing actions 19 % Setting data model parameters                    vtune: Executing actions 19 % Resolving module symbols                         vtune: Executing actions 19 % Resolving information for `librt.so.1'           vtune: Executing actions 19 % Resolving information for `libittnotify_collector
-vtune: Warning: Cannot locate debugging information for file `/lib64/librt.so.1'.
-vtune: Executing actions 19 % Resolving information for `libpthread.so.0'      vtune: Executing actions 19 % Resolving information for `libiomp5.so'          
-vtune: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/runtime/libittnotify_collector.so'.
-vtune: Executing actions 19 % Resolving information for `libc.so.6'            vtune: Executing actions 19 % Resolving information for `PMC'                  vtune: Executing actions 20 % Resolving information for `PMC'                  
-vtune: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-vtune: Executing actions 20 % Resolving information for `libtpsstool.so'       vtune: Executing actions 20 % Resolving information for `libstdc++.so.6'       
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/libtpsstool.so'.
-vtune: Executing actions 21 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving sync object name information           vtune: Executing actions 24 % Resolving sync object name information           vtune: Executing actions 24 % Resolving thread name information                vtune: Executing actions 24 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving interrupt name information             vtune: Executing actions 26 % Resolving interrupt name information             vtune: Executing actions 26 % Processing profile metrics and debug information vtune: Executing actions 28 % Processing profile metrics and debug information vtune: Executing actions 29 % Processing profile metrics and debug information vtune: Executing actions 30 % Processing profile metrics and debug information vtune: Executing actions 31 % Processing profile metrics and debug information vtune: Executing actions 31 % Setting data model parameters                    vtune: Executing actions 32 % Setting data model parameters                    vtune: Executing actions 32 % Precomputing frequently used data                vtune: Executing actions 32 % Precomputing frequently used data                vtune: Executing actions 33 % Precomputing frequently used data                vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 36 % Precomputing frequently used data                vtune: Executing actions 38 % Precomputing frequently used data                vtune: Executing actions 38 % Updating precomputed scalar metrics              vtune: Executing actions 39 % Updating precomputed scalar metrics              vtune: Executing actions 39 % Discarding redundant overtime data               vtune: Executing actions 41 % Discarding redundant overtime data               vtune: Executing actions 41 % Saving the result                                vtune: Executing actions 42 % Saving the result                                vtune: Executing actions 44 % Saving the result                                vtune: Executing actions 49 % Saving the result                                vtune: Executing actions 50 % Saving the result                                vtune: Executing actions 50 % Generating a report                              vtune: Executing actions 50 % Setting data model parameters                    vtune: Executing actions 75 % Setting data model parameters                    vtune: Executing actions 75 % Generating a report                              Elapsed Time: 9.036s
-    Paused Time: 0s
-Effective CPU Utilization: 2.8% (0.995 out of 36 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Total Thread Count: 1
-     | The number of threads in the application is significantly lower than the
-     | number of logical cores on the machine. Check if it is resulted by thread
-     | number hard coding that limits application scalability.
-     |
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 0.001s (100.0% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                                                    Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        -------------------------------------------------------------  -----------------------------------  ----------------------------  ----------
-        Stream ../data/bun_zipper_res3.pts 0x3eaa1d9f                                               0.000s                        100.0%           1
-        Stream 0x123218e5                                                                           0.000s                        100.0%           1
-        Stream /proc/cpuinfo 0x7b92ebf5                                                             0.000s                        100.0%           2
-        Stream 0x56b5edcc                                                                           0.000s                        100.0%           1
-        Stream /sys/kernel/mm/transparent_hugepage/enabled 0x4bb6a343                               0.000s                        100.0%           1
-        [Others]                                                                                    0.000s                        100.0%           2
-    Spin and Overhead Time: 0.010s (0.1% of CPU Time)
-
-        Top Functions with Spin or Overhead Time
-        Function                       Module       Spin and Overhead Time  (% from CPU Time)(%)
-        -----------------------------  -----------  ----------------------  --------------------
-        __kmp_api_omp_set_num_threads  libiomp5.so                  0.010s                  0.1%
-Collection and Platform Info
-    Application Command Line: ./PMC "--builder" "ref" "-t" "18" "--grid" "128" "../data/bun_zipper_res3.pts" 
-    Operating System: 4.18.0-305.25.1.el8_4.x86_64 Red Hat Enterprise Linux release 8.4 (Ootpa)
-    Computer Name: cn44.barbora.it4i.cz
-    Result Size: 4,1 MB 
-    Collection start time: 18:07:31 03/12/2024 UTC
-    Collection stop time: 18:07:41 03/12/2024 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Cascadelake
-        Frequency
-        Logical CPU Count: 36
-        Cache Allocation Technology
-            Level 2 capability: not detected
-            Level 3 capability: available
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
-Alternatively, you may view the report in the csv format: vtune -report
-<report_name> -format=csv.
-vtune: Executing actions 100 % Generating a report                             vtune: Executing actions 100 % done                                            
-vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r /home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-loop-18 -command stop.
-======================== Marching Cubes Mesh Builder ==========================
-Mesh Builder:        OpenMP Loop
-Input Field File:    ../data/bun_zipper_res3.pts
-Output Mesh File:    
-Grid Size:           128
-Iso Level:           0.15
-Field Elements:      1889
-============================= Building the Mesh ===============================
-Number of Threads:   18
-Elapsed Time:        525 ms
-Mesh Triangle Count: 163220
-vtune: Collection stopped.
-vtune: Using result path `/home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-loop-18'
-vtune: Executing actions  0 %                                                  vtune: Executing actions  0 % Finalizing results                               vtune: Executing actions  0 % Finalizing the result                            vtune: Executing actions  0 % Clearing the database                            vtune: Executing actions  7 % Clearing the database                            vtune: Executing actions  7 % Loading raw data to the database                 vtune: Executing actions  7 % Loading 'systemcollector-3387523-cn44.barbora.it4vtune: Executing actions 12 % Loading 'systemcollector-3387523-cn44.barbora.it4vtune: Executing actions 12 % Loading '3387523-3387528.0.trace' file           vtune: Executing actions 12 % Loading 'userapicollector-3387528-addd26ff.trace'vtune: Executing actions 12 % Converting API Events to Waits                   vtune: Executing actions 12 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Processing profile metrics and debug information vtune: Executing actions 19 % Processing profile metrics and debug information vtune: Executing actions 19 % Setting data model parameters                    vtune: Executing actions 19 % Resolving module symbols                         vtune: Executing actions 19 % Resolving information for dangling locations     vtune: Executing actions 19 % Resolving information for `libpthread.so.0'      vtune: Executing actions 19 % Resolving information for `libittnotify_collectorvtune: Executing actions 19 % Resolving information for `librt.so.1'           
-vtune: Warning: Cannot locate debugging information for file `/lib64/librt.so.1'.
-vtune: Executing actions 19 % Resolving information for `libiomp5.so'          
-vtune: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/runtime/libittnotify_collector.so'.
-vtune: Executing actions 19 % Resolving information for `libc.so.6'            vtune: Executing actions 19 % Resolving information for `PMC'                  vtune: Executing actions 20 % Resolving information for `PMC'                  
-vtune: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-vtune: Executing actions 20 % Resolving information for `libtpsstool.so'       vtune: Executing actions 20 % Resolving information for `libstdc++.so.6'       
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/libtpsstool.so'.
-vtune: Executing actions 21 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving sync object name information           vtune: Executing actions 24 % Resolving sync object name information           vtune: Executing actions 24 % Resolving thread name information                vtune: Executing actions 24 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving interrupt name information             vtune: Executing actions 26 % Resolving interrupt name information             vtune: Executing actions 26 % Processing profile metrics and debug information vtune: Executing actions 28 % Processing profile metrics and debug information vtune: Executing actions 30 % Processing profile metrics and debug information vtune: Executing actions 31 % Processing profile metrics and debug information vtune: Executing actions 32 % Processing profile metrics and debug information vtune: Executing actions 33 % Processing profile metrics and debug information vtune: Executing actions 34 % Processing profile metrics and debug information vtune: Executing actions 35 % Processing profile metrics and debug information vtune: Executing actions 35 % Setting data model parameters                    vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 36 % Precomputing frequently used data                vtune: Executing actions 37 % Precomputing frequently used data                vtune: Executing actions 38 % Precomputing frequently used data                vtune: Executing actions 39 % Precomputing frequently used data                vtune: Executing actions 40 % Precomputing frequently used data                vtune: Executing actions 41 % Precomputing frequently used data                vtune: Executing actions 41 % Updating precomputed scalar metrics              vtune: Executing actions 42 % Updating precomputed scalar metrics              vtune: Executing actions 42 % Discarding redundant overtime data               vtune: Executing actions 44 % Discarding redundant overtime data               vtune: Executing actions 44 % Saving the result                                vtune: Executing actions 46 % Saving the result                                vtune: Executing actions 48 % Saving the result                                vtune: Executing actions 50 % Saving the result                                vtune: Executing actions 50 % Generating a report                              vtune: Executing actions 50 % Setting data model parameters                    vtune: Executing actions 75 % Setting data model parameters                    vtune: Executing actions 75 % Generating a report                              Elapsed Time: 0.550s
-    Paused Time: 0s
-Effective CPU Utilization: 45.9% (16.542 out of 36 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    OpenMP Analysis. Collection Time: 0.550
-        Serial Time (outside parallel regions): 0.032s (5.8%)
-
-            Top Serial Hotspots (outside parallel regions)
-            Function                       Module       Serial CPU Time
-            -----------------------------  -----------  ---------------
-            __kmp_api_omp_set_num_threads  libiomp5.so           0.010s
-        Parallel Region Time: 0.518s (94.2%)
-            Estimated Ideal Time: 0.510s (92.7%)
-            OpenMP Potential Gain: 0.008s (1.4%)
-    Total Thread Count: 18
-     | The number of threads in the application is significantly lower than the
-     | number of logical cores on the machine. Check if it is resulted by thread
-     | number hard coding that limits application scalability.
-     |
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 0.010s (100.0% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                                                    Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        -------------------------------------------------------------  -----------------------------------  ----------------------------  ----------
-        Condition Variable 0x56a04c77                                                               0.010s                        100.0%           6
-        Stream ../data/bun_zipper_res3.pts 0x3eaa1d9f                                               0.000s                        100.0%           1
-        Stream /proc/cpuinfo 0x7b92ebf5                                                             0.000s                        100.0%           1
-        Stream /sys/kernel/mm/transparent_hugepage/enabled 0x4bb6a343                               0.000s                        100.0%           1
-        Stream /proc/meminfo 0x77024c4e                                                             0.000s                        100.0%           1
-        Stream /proc/sys/vm/nr_hugepages 0xda557df6                                                 0.000s                        100.0%           1
-    Spin and Overhead Time: 0.170s (1.8% of CPU Time)
-
-        Top Functions with Spin or Overhead Time
-        Function                       Module       Spin and Overhead Time  (% from CPU Time)(%)
-        -----------------------------  -----------  ----------------------  --------------------
-        __kmp_barrier                  libiomp5.so                  0.060s                  0.6%
-        __kmp_fork_barrier             libiomp5.so                  0.040s                  0.4%
-        __kmpc_end_critical            libiomp5.so                  0.040s                  0.4%
-        __kmpc_critical                libiomp5.so                  0.020s                  0.2%
-        __kmp_api_omp_set_num_threads  libiomp5.so                  0.010s                  0.1%
-Collection and Platform Info
-    Application Command Line: ./PMC "--builder" "loop" "-t" "18" "--grid" "128" "../data/bun_zipper_res3.pts" 
-    Operating System: 4.18.0-305.25.1.el8_4.x86_64 Red Hat Enterprise Linux release 8.4 (Ootpa)
-    Computer Name: cn44.barbora.it4i.cz
-    Result Size: 4,4 MB 
-    Collection start time: 18:07:46 03/12/2024 UTC
-    Collection stop time: 18:07:47 03/12/2024 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Cascadelake
-        Frequency
-        Logical CPU Count: 36
-        Cache Allocation Technology
-            Level 2 capability: not detected
-            Level 3 capability: available
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
-Alternatively, you may view the report in the csv format: vtune -report
-<report_name> -format=csv.
-vtune: Executing actions 100 % Generating a report                             vtune: Executing actions 100 % done                                            
-vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r /home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-tree-18 -command stop.
-======================== Marching Cubes Mesh Builder ==========================
-Mesh Builder:        Octree
-Input Field File:    ../data/bun_zipper_res3.pts
-Output Mesh File:    
-Grid Size:           128
-Iso Level:           0.15
-Field Elements:      1889
-============================= Building the Mesh ===============================
-Number of Threads:   18
-Elapsed Time:        509 ms
-Mesh Triangle Count: 163220
-vtune: Collection stopped.
-vtune: Using result path `/home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-tree-18'
-vtune: Executing actions  0 %                                                  vtune: Executing actions  0 % Finalizing results                               vtune: Executing actions  0 % Finalizing the result                            vtune: Executing actions  0 % Clearing the database                            vtune: Executing actions  7 % Clearing the database                            vtune: Executing actions  7 % Loading raw data to the database                 vtune: Executing actions  7 % Loading 'systemcollector-3387612-cn44.barbora.it4vtune: Executing actions 12 % Loading 'systemcollector-3387612-cn44.barbora.it4vtune: Executing actions 12 % Loading '3387612-3387617.0.trace' file           vtune: Executing actions 12 % Loading 'userapicollector-3387617-5ac0dc3f.trace'vtune: Executing actions 12 % Converting API Events to Waits                   vtune: Executing actions 12 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Processing profile metrics and debug information vtune: Executing actions 19 % Processing profile metrics and debug information vtune: Executing actions 19 % Setting data model parameters                    vtune: Executing actions 19 % Resolving module symbols                         vtune: Executing actions 19 % Resolving information for dangling locations     vtune: Executing actions 19 % Resolving information for `librt.so.1'           vtune: Executing actions 19 % Resolving information for `libpthread.so.0'      
-vtune: Warning: Cannot locate debugging information for file `/lib64/librt.so.1'.
-vtune: Executing actions 19 % Resolving information for `libittnotify_collector
-vtune: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-vtune: Executing actions 19 % Resolving information for `libiomp5.so'          
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/runtime/libittnotify_collector.so'.
-vtune: Executing actions 19 % Resolving information for `libc.so.6'            vtune: Executing actions 20 % Resolving information for `libc.so.6'            vtune: Executing actions 20 % Resolving information for `PMC'                  
-vtune: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-vtune: Executing actions 20 % Resolving information for `libtpsstool.so'       vtune: Executing actions 20 % Resolving information for `libstdc++.so.6'       
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/libtpsstool.so'.
-vtune: Executing actions 21 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving sync object name information           vtune: Executing actions 24 % Resolving sync object name information           vtune: Executing actions 24 % Resolving thread name information                vtune: Executing actions 24 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving interrupt name information             vtune: Executing actions 26 % Resolving interrupt name information             vtune: Executing actions 26 % Processing profile metrics and debug information vtune: Executing actions 28 % Processing profile metrics and debug information vtune: Executing actions 30 % Processing profile metrics and debug information vtune: Executing actions 31 % Processing profile metrics and debug information vtune: Executing actions 32 % Processing profile metrics and debug information vtune: Executing actions 33 % Processing profile metrics and debug information vtune: Executing actions 34 % Processing profile metrics and debug information vtune: Executing actions 35 % Processing profile metrics and debug information vtune: Executing actions 35 % Setting data model parameters                    vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 36 % Precomputing frequently used data                vtune: Executing actions 37 % Precomputing frequently used data                vtune: Executing actions 38 % Precomputing frequently used data                vtune: Executing actions 39 % Precomputing frequently used data                vtune: Executing actions 40 % Precomputing frequently used data                vtune: Executing actions 41 % Precomputing frequently used data                vtune: Executing actions 41 % Updating precomputed scalar metrics              vtune: Executing actions 42 % Updating precomputed scalar metrics              vtune: Executing actions 42 % Discarding redundant overtime data               vtune: Executing actions 44 % Discarding redundant overtime data               vtune: Executing actions 44 % Saving the result                                vtune: Executing actions 46 % Saving the result                                vtune: Executing actions 48 % Saving the result                                vtune: Executing actions 50 % Saving the result                                vtune: Executing actions 50 % Generating a report                              vtune: Executing actions 50 % Setting data model parameters                    vtune: Executing actions 75 % Setting data model parameters                    vtune: Executing actions 75 % Generating a report                              Elapsed Time: 0.536s
-    Paused Time: 0s
-Effective CPU Utilization: 26.1% (9.405 out of 36 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    OpenMP Analysis. Collection Time: 0.536
-        Serial Time (outside parallel regions): 0.034s (6.3%)
-
-            Top Serial Hotspots (outside parallel regions)
-            Function                       Module       Serial CPU Time
-            -----------------------------  -----------  ---------------
-            __kmp_api_omp_set_num_threads  libiomp5.so           0.010s
-        Parallel Region Time: 0.502s (93.7%)
-            Estimated Ideal Time: 0.474s (88.5%)
-            OpenMP Potential Gain: 0.028s (5.2%)
-    Total Thread Count: 18
-     | The number of threads in the application is significantly lower than the
-     | number of logical cores on the machine. Check if it is resulted by thread
-     | number hard coding that limits application scalability.
-     |
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 0.064s (100.0% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                                                    Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        -------------------------------------------------------------  -----------------------------------  ----------------------------  ----------
-        Condition Variable 0x56a04c77                                                               0.063s                        100.0%          25
-        Stream ../data/bun_zipper_res3.pts 0x3eaa1d9f                                               0.000s                        100.0%           1
-        Stream /proc/cpuinfo 0x7b92ebf5                                                             0.000s                        100.0%           1
-        Stream /proc/meminfo 0x77024c4e                                                             0.000s                        100.0%           1
-        Stream /sys/kernel/mm/transparent_hugepage/enabled 0x4bb6a343                               0.000s                        100.0%           1
-        Stream /proc/sys/vm/nr_hugepages 0xda557df6                                                 0.000s                        100.0%           1
-    Spin and Overhead Time: 3.870s (43.5% of CPU Time)
-     | A significant portion of CPU time is spent in synchronization or
-     | threading overhead. Consider increasing task granularity or the scope of
-     | data synchronization.
-     |
-
-        Top Functions with Spin or Overhead Time
-        Function                       Module       Spin and Overhead Time  (% from CPU Time)(%)
-        -----------------------------  -----------  ----------------------  --------------------
-        __kmpc_critical                libiomp5.so                  3.160s                 35.5%
-        __kmpc_omp_taskwait            libiomp5.so                  0.540s                  6.1%
-        __kmpc_end_critical            libiomp5.so                  0.090s                  1.0%
-        __kmp_task_alloc_impl          libiomp5.so                  0.030s                  0.3%
-        __kmp_api_omp_set_num_threads  libiomp5.so                  0.010s                  0.1%
-        [Others]                       N/A                          0.040s                  0.4%
-Collection and Platform Info
-    Application Command Line: ./PMC "--builder" "tree" "-t" "18" "--grid" "128" "../data/bun_zipper_res3.pts" 
-    Operating System: 4.18.0-305.25.1.el8_4.x86_64 Red Hat Enterprise Linux release 8.4 (Ootpa)
-    Computer Name: cn44.barbora.it4i.cz
-    Result Size: 4,8 MB 
-    Collection start time: 18:07:54 03/12/2024 UTC
-    Collection stop time: 18:07:55 03/12/2024 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Cascadelake
-        Frequency
-        Logical CPU Count: 36
-        Cache Allocation Technology
-            Level 2 capability: not detected
-            Level 3 capability: available
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
-Alternatively, you may view the report in the csv format: vtune -report
-<report_name> -format=csv.
-vtune: Executing actions 100 % Generating a report                             vtune: Executing actions 100 % done                                            
-vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r /home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-ref-36 -command stop.
-======================== Marching Cubes Mesh Builder ==========================
-Mesh Builder:        Reference
-Input Field File:    ../data/bun_zipper_res3.pts
-Output Mesh File:    
-Grid Size:           128
-Iso Level:           0.15
-Field Elements:      1889
-============================= Building the Mesh ===============================
-Number of Threads:   36
-Elapsed Time:        9003 ms
-Mesh Triangle Count: 163220
-vtune: Collection stopped.
-vtune: Using result path `/home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-ref-36'
-vtune: Executing actions  0 %                                                  vtune: Executing actions  0 % Finalizing results                               vtune: Executing actions  0 % Finalizing the result                            vtune: Executing actions  0 % Clearing the database                            vtune: Executing actions  7 % Clearing the database                            vtune: Executing actions  7 % Loading raw data to the database                 vtune: Executing actions  7 % Loading 'systemcollector-3387725-cn44.barbora.it4vtune: Executing actions 12 % Loading 'systemcollector-3387725-cn44.barbora.it4vtune: Executing actions 12 % Loading '3387725-3387730.0.trace' file           vtune: Executing actions 12 % Loading 'userapicollector-3387730-11d39522.trace'vtune: Executing actions 12 % Converting API Events to Waits                   vtune: Executing actions 12 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Processing profile metrics and debug information vtune: Executing actions 19 % Processing profile metrics and debug information vtune: Executing actions 19 % Setting data model parameters                    vtune: Executing actions 19 % Resolving module symbols                         vtune: Executing actions 19 % Resolving information for `librt.so.1'           
-vtune: Warning: Cannot locate debugging information for file `/lib64/librt.so.1'.
-vtune: Executing actions 19 % Resolving information for `libittnotify_collectorvtune: Executing actions 19 % Resolving information for `libiomp5.so'          
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/runtime/libittnotify_collector.so'.
-vtune: Executing actions 19 % Resolving information for `libc.so.6'            vtune: Executing actions 19 % Resolving information for `PMC'                  vtune: Executing actions 20 % Resolving information for `PMC'                  
-vtune: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-vtune: Executing actions 20 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 21 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving sync object name information           vtune: Executing actions 24 % Resolving sync object name information           vtune: Executing actions 24 % Resolving thread name information                vtune: Executing actions 24 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving interrupt name information             vtune: Executing actions 26 % Resolving interrupt name information             vtune: Executing actions 26 % Processing profile metrics and debug information vtune: Executing actions 28 % Processing profile metrics and debug information vtune: Executing actions 29 % Processing profile metrics and debug information vtune: Executing actions 30 % Processing profile metrics and debug information vtune: Executing actions 31 % Processing profile metrics and debug information vtune: Executing actions 31 % Setting data model parameters                    vtune: Executing actions 32 % Setting data model parameters                    vtune: Executing actions 32 % Precomputing frequently used data                vtune: Executing actions 32 % Precomputing frequently used data                vtune: Executing actions 33 % Precomputing frequently used data                vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 36 % Precomputing frequently used data                vtune: Executing actions 38 % Precomputing frequently used data                vtune: Executing actions 38 % Updating precomputed scalar metrics              vtune: Executing actions 39 % Updating precomputed scalar metrics              vtune: Executing actions 39 % Discarding redundant overtime data               vtune: Executing actions 41 % Discarding redundant overtime data               vtune: Executing actions 41 % Saving the result                                vtune: Executing actions 42 % Saving the result                                vtune: Executing actions 44 % Saving the result                                vtune: Executing actions 50 % Saving the result                                vtune: Executing actions 50 % Generating a report                              vtune: Executing actions 50 % Setting data model parameters                    vtune: Executing actions 75 % Setting data model parameters                    vtune: Executing actions 75 % Generating a report                              Elapsed Time: 9.023s
-    Paused Time: 0s
-Effective CPU Utilization: 2.8% (0.996 out of 36 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    Total Thread Count: 1
-     | The number of threads in the application is significantly lower than the
-     | number of logical cores on the machine. Check if it is resulted by thread
-     | number hard coding that limits application scalability.
-     |
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 0.000s (100.0% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                                                    Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        -------------------------------------------------------------  -----------------------------------  ----------------------------  ----------
-        Stream ../data/bun_zipper_res3.pts 0x3eaa1d9f                                               0.000s                        100.0%           1
-        Stream /proc/cpuinfo 0x7b92ebf5                                                             0.000s                        100.0%           1
-        Stream /sys/kernel/mm/transparent_hugepage/enabled 0x4bb6a343                               0.000s                        100.0%           1
-        Stream /proc/sys/vm/nr_hugepages 0xda557df6                                                 0.000s                        100.0%           1
-        Stream /proc/meminfo 0x77024c4e                                                             0.000s                        100.0%           1
-    Spin and Overhead Time: 0.010s (0.1% of CPU Time)
-
-        Top Functions with Spin or Overhead Time
-        Function                       Module       Spin and Overhead Time  (% from CPU Time)(%)
-        -----------------------------  -----------  ----------------------  --------------------
-        __kmp_api_omp_set_num_threads  libiomp5.so                  0.010s                  0.1%
-Collection and Platform Info
-    Application Command Line: ./PMC "--builder" "ref" "-t" "36" "--grid" "128" "../data/bun_zipper_res3.pts" 
-    Operating System: 4.18.0-305.25.1.el8_4.x86_64 Red Hat Enterprise Linux release 8.4 (Ootpa)
-    Computer Name: cn44.barbora.it4i.cz
-    Result Size: 4,1 MB 
-    Collection start time: 18:08:01 03/12/2024 UTC
-    Collection stop time: 18:08:10 03/12/2024 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Cascadelake
-        Frequency
-        Logical CPU Count: 36
-        Cache Allocation Technology
-            Level 2 capability: not detected
-            Level 3 capability: available
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
-Alternatively, you may view the report in the csv format: vtune -report
-<report_name> -format=csv.
-vtune: Executing actions 100 % Generating a report                             vtune: Executing actions 100 % done                                            
-vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r /home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-loop-36 -command stop.
-======================== Marching Cubes Mesh Builder ==========================
-Mesh Builder:        OpenMP Loop
-Input Field File:    ../data/bun_zipper_res3.pts
-Output Mesh File:    
-Grid Size:           128
-Iso Level:           0.15
-Field Elements:      1889
-============================= Building the Mesh ===============================
-Number of Threads:   36
-Elapsed Time:        371 ms
-Mesh Triangle Count: 163220
-vtune: Collection stopped.
-vtune: Using result path `/home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-loop-36'
-vtune: Executing actions  0 %                                                  vtune: Executing actions  0 % Finalizing results                               vtune: Executing actions  0 % Finalizing the result                            vtune: Executing actions  0 % Clearing the database                            vtune: Executing actions  7 % Clearing the database                            vtune: Executing actions  7 % Loading raw data to the database                 vtune: Executing actions  7 % Loading 'systemcollector-3387835-cn44.barbora.it4vtune: Executing actions 12 % Loading 'systemcollector-3387835-cn44.barbora.it4vtune: Executing actions 12 % Loading '3387835-3387840.0.trace' file           vtune: Executing actions 12 % Loading 'userapicollector-3387840-89799945.trace'vtune: Executing actions 12 % Converting API Events to Waits                   vtune: Executing actions 12 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Processing profile metrics and debug information vtune: Executing actions 19 % Processing profile metrics and debug information vtune: Executing actions 19 % Setting data model parameters                    vtune: Executing actions 19 % Resolving module symbols                         vtune: Executing actions 19 % Resolving information for dangling locations     vtune: Executing actions 19 % Resolving information for `librt.so.1'           vtune: Executing actions 19 % Resolving information for `libpthread.so.0'      vtune: Executing actions 19 % Resolving information for `libittnotify_collector
-vtune: Warning: Cannot locate debugging information for file `/lib64/librt.so.1'.
-vtune: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-vtune: Executing actions 19 % Resolving information for `libiomp5.so'          
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/runtime/libittnotify_collector.so'.
-vtune: Executing actions 19 % Resolving information for `libc.so.6'            vtune: Executing actions 19 % Resolving information for `PMC'                  vtune: Executing actions 20 % Resolving information for `PMC'                  
-vtune: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-vtune: Executing actions 20 % Resolving information for `libtpsstool.so'       vtune: Executing actions 20 % Resolving information for `libstdc++.so.6'       
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/libtpsstool.so'.
-vtune: Executing actions 21 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving sync object name information           vtune: Executing actions 24 % Resolving sync object name information           vtune: Executing actions 24 % Resolving thread name information                vtune: Executing actions 24 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving interrupt name information             vtune: Executing actions 26 % Resolving interrupt name information             vtune: Executing actions 26 % Processing profile metrics and debug information vtune: Executing actions 28 % Processing profile metrics and debug information vtune: Executing actions 30 % Processing profile metrics and debug information vtune: Executing actions 31 % Processing profile metrics and debug information vtune: Executing actions 32 % Processing profile metrics and debug information vtune: Executing actions 33 % Processing profile metrics and debug information vtune: Executing actions 34 % Processing profile metrics and debug information vtune: Executing actions 35 % Processing profile metrics and debug information vtune: Executing actions 35 % Setting data model parameters                    vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 36 % Precomputing frequently used data                vtune: Executing actions 37 % Precomputing frequently used data                vtune: Executing actions 38 % Precomputing frequently used data                vtune: Executing actions 39 % Precomputing frequently used data                vtune: Executing actions 40 % Precomputing frequently used data                vtune: Executing actions 41 % Precomputing frequently used data                vtune: Executing actions 41 % Updating precomputed scalar metrics              vtune: Executing actions 42 % Updating precomputed scalar metrics              vtune: Executing actions 42 % Discarding redundant overtime data               vtune: Executing actions 44 % Discarding redundant overtime data               vtune: Executing actions 44 % Saving the result                                vtune: Executing actions 46 % Saving the result                                vtune: Executing actions 48 % Saving the result                                vtune: Executing actions 50 % Saving the result                                vtune: Executing actions 50 % Generating a report                              vtune: Executing actions 50 % Setting data model parameters                    vtune: Executing actions 75 % Setting data model parameters                    vtune: Executing actions 75 % Generating a report                              Elapsed Time: 0.401s
-    Paused Time: 0s
-Effective CPU Utilization: 75.7% (27.254 out of 36 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    OpenMP Analysis. Collection Time: 0.401
-        Serial Time (outside parallel regions): 0.053s (13.1%)
-
-            Top Serial Hotspots (outside parallel regions)
-            Function                       Module           Serial CPU Time
-            -----------------------------  ---------------  ---------------
-            pthread_create                 libpthread.so.0           0.010s
-            __kmp_api_omp_set_num_threads  libiomp5.so               0.010s
-        Parallel Region Time: 0.348s (86.9%)
-            Estimated Ideal Time: 0.332s (82.9%)
-            OpenMP Potential Gain: 0.016s (4.0%)
-    Total Thread Count: 36
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 0.226s (97.1% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                                                    Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        -------------------------------------------------------------  -----------------------------------  ----------------------------  ----------
-        Condition Variable 0x56a04c77                                                               0.226s                         97.0%          25
-        Stream ../data/bun_zipper_res3.pts 0x3eaa1d9f                                               0.000s                        100.0%           1
-        Stream /proc/cpuinfo 0x7b92ebf5                                                             0.000s                        100.0%           2
-        Stream /sys/kernel/mm/transparent_hugepage/enabled 0x4bb6a343                               0.000s                        100.0%           1
-        Stream /proc/meminfo 0x77024c4e                                                             0.000s                        100.0%           1
-        Stream /proc/sys/vm/nr_hugepages 0xda557df6                                                 0.000s                        100.0%           1
-    Spin and Overhead Time: 1.510s (12.2% of CPU Time)
-
-        Top Functions with Spin or Overhead Time
-        Function               Module       Spin and Overhead Time  (% from CPU Time)(%)
-        ---------------------  -----------  ----------------------  --------------------
-        __kmpc_critical        libiomp5.so                  0.600s                  4.8%
-        __kmp_barrier          libiomp5.so                  0.510s                  4.1%
-        __kmp_itt_thread_name  libiomp5.so                  0.250s                  2.0%
-        __kmp_fork_barrier     libiomp5.so                  0.070s                  0.6%
-        __kmpc_end_critical    libiomp5.so                  0.060s                  0.5%
-        [Others]               N/A                          0.020s                  0.2%
-Collection and Platform Info
-    Application Command Line: ./PMC "--builder" "loop" "-t" "36" "--grid" "128" "../data/bun_zipper_res3.pts" 
-    Operating System: 4.18.0-305.25.1.el8_4.x86_64 Red Hat Enterprise Linux release 8.4 (Ootpa)
-    Computer Name: cn44.barbora.it4i.cz
-    Result Size: 4,7 MB 
-    Collection start time: 18:08:16 03/12/2024 UTC
-    Collection stop time: 18:08:17 03/12/2024 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Cascadelake
-        Frequency
-        Logical CPU Count: 36
-        Cache Allocation Technology
-            Level 2 capability: not detected
-            Level 3 capability: available
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
-Alternatively, you may view the report in the csv format: vtune -report
-<report_name> -format=csv.
-vtune: Executing actions 100 % Generating a report                             vtune: Executing actions 100 % done                                            
-vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r /home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-tree-36 -command stop.
-======================== Marching Cubes Mesh Builder ==========================
-Mesh Builder:        Octree
-Input Field File:    ../data/bun_zipper_res3.pts
-Output Mesh File:    
-Grid Size:           128
-Iso Level:           0.15
-Field Elements:      1889
-============================= Building the Mesh ===============================
-Number of Threads:   36
-Elapsed Time:        1623 ms
-Mesh Triangle Count: 163220
-vtune: Collection stopped.
-vtune: Using result path `/home/xbahou00/avs/proj2/avs-proj2/build_vtune/vtune-tree-36'
-vtune: Executing actions  0 %                                                  vtune: Executing actions  0 % Finalizing results                               vtune: Executing actions  0 % Finalizing the result                            vtune: Executing actions  0 % Clearing the database                            vtune: Executing actions  7 % Clearing the database                            vtune: Executing actions  7 % Loading raw data to the database                 vtune: Executing actions  7 % Loading 'systemcollector-3387940-cn44.barbora.it4vtune: Executing actions 12 % Loading 'systemcollector-3387940-cn44.barbora.it4vtune: Executing actions 12 % Loading '3387940-3387945.0.trace' file           vtune: Executing actions 12 % Loading 'userapicollector-3387945-31985b00.trace'vtune: Executing actions 12 % Converting API Events to Waits                   vtune: Executing actions 12 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Processing profile metrics and debug information vtune: Executing actions 19 % Processing profile metrics and debug information vtune: Executing actions 19 % Setting data model parameters                    vtune: Executing actions 19 % Resolving module symbols                         vtune: Executing actions 19 % Resolving information for dangling locations     vtune: Executing actions 19 % Resolving information for `libpthread.so.0'      vtune: Executing actions 19 % Resolving information for `librt.so.1'           vtune: Executing actions 19 % Resolving information for `libittnotify_collector
-vtune: Warning: Cannot locate debugging information for file `/lib64/librt.so.1'.
-vtune: Warning: Cannot locate debugging information for file `/lib64/libpthread.so.0'.
-vtune: Executing actions 19 % Resolving information for `libiomp5.so'          
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/runtime/libittnotify_collector.so'.
-vtune: Executing actions 19 % Resolving information for `libc.so.6'            vtune: Executing actions 20 % Resolving information for `libc.so.6'            vtune: Executing actions 20 % Resolving information for `PMC'                  
-vtune: Warning: Cannot locate debugging information for file `/lib64/libc.so.6'.
-vtune: Executing actions 20 % Resolving information for `libtpsstool.so'       vtune: Executing actions 20 % Resolving information for `libstdc++.so.6'       
-vtune: Warning: Cannot locate debugging information for file `/apps/all/VTune/2022.2.0-intel-2021b/vtune/2022.2.0/lib64/libtpsstool.so'.
-vtune: Executing actions 21 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving information for `libstdc++.so.6'       vtune: Executing actions 22 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving sync object name information           vtune: Executing actions 24 % Resolving sync object name information           vtune: Executing actions 24 % Resolving thread name information                vtune: Executing actions 24 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving call target names for dynamic code     vtune: Executing actions 25 % Resolving interrupt name information             vtune: Executing actions 26 % Resolving interrupt name information             vtune: Executing actions 26 % Processing profile metrics and debug information vtune: Executing actions 28 % Processing profile metrics and debug information vtune: Executing actions 30 % Processing profile metrics and debug information vtune: Executing actions 31 % Processing profile metrics and debug information vtune: Executing actions 32 % Processing profile metrics and debug information vtune: Executing actions 33 % Processing profile metrics and debug information vtune: Executing actions 34 % Processing profile metrics and debug information vtune: Executing actions 35 % Processing profile metrics and debug information vtune: Executing actions 35 % Setting data model parameters                    vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 35 % Precomputing frequently used data                vtune: Executing actions 36 % Precomputing frequently used data                vtune: Executing actions 37 % Precomputing frequently used data                vtune: Executing actions 38 % Precomputing frequently used data                vtune: Executing actions 39 % Precomputing frequently used data                vtune: Executing actions 40 % Precomputing frequently used data                vtune: Executing actions 41 % Precomputing frequently used data                vtune: Executing actions 41 % Updating precomputed scalar metrics              vtune: Executing actions 42 % Updating precomputed scalar metrics              vtune: Executing actions 42 % Discarding redundant overtime data               vtune: Executing actions 44 % Discarding redundant overtime data               vtune: Executing actions 44 % Saving the result                                vtune: Executing actions 46 % Saving the result                                vtune: Executing actions 48 % Saving the result                                vtune: Executing actions 49 % Saving the result                                vtune: Executing actions 50 % Saving the result                                vtune: Executing actions 50 % Generating a report                              vtune: Executing actions 50 % Setting data model parameters                    vtune: Executing actions 75 % Setting data model parameters                    vtune: Executing actions 75 % Generating a report                              Elapsed Time: 1.655s
-    Paused Time: 0s
-Effective CPU Utilization: 9.4% (3.397 out of 36 logical CPUs)
- | The metric value is low, which may signal a poor logical CPU cores
- | utilization caused by load imbalance, threading runtime overhead, contended
- | synchronization, or thread/process underutilization. Explore sub-metrics to
- | estimate the efficiency of MPI and OpenMP parallelism or run the Locks and
- | Waits analysis to identify parallel bottlenecks for other parallel runtimes.
- |
-    OpenMP Analysis. Collection Time: 1.655
-        Serial Time (outside parallel regions): 0.049s (3.0%)
-
-            Top Serial Hotspots (outside parallel regions)
-            Function                       Module       Serial CPU Time
-            -----------------------------  -----------  ---------------
-            __kmp_api_omp_set_num_threads  libiomp5.so           0.010s
-            __kmp_create_worker            libiomp5.so           0.010s
-        Parallel Region Time: 1.606s (97.0%)
-            Estimated Ideal Time: 1.579s (95.4%)
-            OpenMP Potential Gain: 0.027s (1.7%)
-    Total Thread Count: 36
-        Thread Oversubscription: 0s (0.0% of CPU Time)
-    Wait Time with poor CPU Utilization: 6.786s (100.0% of Wait Time)
-
-        Top Waiting Objects
-        Sync Object                                    Wait Time with poor CPU Utilization  (% from Object Wait Time)(%)  Wait Count
-        ---------------------------------------------  -----------------------------------  ----------------------------  ----------
-        Condition Variable 0x56a04c77                                               6.742s                        100.0%         142
-        Condition Variable                                                          0.044s                        100.0%           2
-        Stream ../data/bun_zipper_res3.pts 0x3eaa1d9f                               0.000s                        100.0%           1
-        Stream /proc/cpuinfo 0x7b92ebf5                                             0.000s                        100.0%           1
-        Mutex 0x414c87fa                                                            0.000s                        100.0%           1
-        [Others]                                                                    0.000s                        100.0%           3
-    Spin and Overhead Time: 30.680s (84.5% of CPU Time)
-     | A significant portion of CPU time is spent in synchronization or
-     | threading overhead. Consider increasing task granularity or the scope of
-     | data synchronization.
-     |
-
-        Top Functions with Spin or Overhead Time
-        Function               Module       Spin and Overhead Time  (% from CPU Time)(%)
-        ---------------------  -----------  ----------------------  --------------------
-        __kmpc_critical        libiomp5.so                 22.380s                 61.7%
-        __kmp_itt_thread_name  libiomp5.so                  5.430s                 15.0%
-        __kmp_wait_4           libiomp5.so                  1.770s                  4.9%
-        __kmpc_omp_taskwait    libiomp5.so                  0.480s                  1.3%
-        __kmpc_end_critical    libiomp5.so                  0.140s                  0.4%
-        [Others]               N/A                          0.480s                  1.3%
-Collection and Platform Info
-    Application Command Line: ./PMC "--builder" "tree" "-t" "36" "--grid" "128" "../data/bun_zipper_res3.pts" 
-    Operating System: 4.18.0-305.25.1.el8_4.x86_64 Red Hat Enterprise Linux release 8.4 (Ootpa)
-    Computer Name: cn44.barbora.it4i.cz
-    Result Size: 5,8 MB 
-    Collection start time: 18:08:23 03/12/2024 UTC
-    Collection stop time: 18:08:25 03/12/2024 UTC
-    Collector Type: User-mode sampling and tracing
-    CPU
-        Name: Intel(R) Xeon(R) Processor code named Cascadelake
-        Frequency
-        Logical CPU Count: 36
-        Cache Allocation Technology
-            Level 2 capability: not detected
-            Level 3 capability: available
-
-If you want to skip descriptions of detected performance issues in the report,
-enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
-Alternatively, you may view the report in the csv format: vtune -report
-<report_name> -format=csv.
-vtune: Executing actions 100 % Generating a report                             vtune: Executing actions 100 % done                                            

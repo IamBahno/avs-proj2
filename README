@@ -1,0 +1,11 @@
+The primary goal of this project was to explore the transition from a sequential to a parallel algorithm and its practical implementation and optimization. The secondary objective was to understand the metrics used in evaluating the effectiveness of parallel algorithms. The first task was to parallelize a naive algorithm for reconstructing a polygonal surface from a scalar field in 3D space (the "Marching Cubes" algorithm) and evaluate its properties. The second task involved optimizing this solution using hierarchical space division (an "Octree") and efficiently eliminating empty space. All parallelization was done using OpenMP directives for shared-memory multi-threaded applications, specifically the #pragma omp parallel directive. The focus was not on explicit vectorization but on parallelization for improved performance.
+
+For performance analysis, Intel VTune was used, and optimization reports were generated with the Intel compiler. The project can be compiled and run on most platforms with CMake and a compiler installed, with the reference system being the Barbora computational cluster.
+
+
+
+
+
+
+
+
